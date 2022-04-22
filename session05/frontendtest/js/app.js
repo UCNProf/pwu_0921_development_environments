@@ -9,7 +9,7 @@ const display_courses = courses => {
 };
 
 const display_course = course => {
-	courseinfo_div.innerHTML = `<h2>${course.get_title()}</h2><div>${course.description}</div>`;
+	courseinfo_div.innerHTML = `<h2>${course.get_title}</h2><div>${course.description}</div>`;
 	info_p.classList.add('hide');
 };
 
@@ -29,7 +29,7 @@ const initialize_elements = () => {
 
 window.addEventListener('DOMContentLoaded', e => {
 	// For testing purposes lines are commented out
-	//initialize_elements();
-	//Api.get_courses(display_courses);
-	//courses_ul.addEventListener('click', on_courses_ul_click);
+	// initialize_elements();
+	// Api.get_courses(display_courses);
+	// courses_ul.addEventListener('click', on_courses_ul_click);
 });

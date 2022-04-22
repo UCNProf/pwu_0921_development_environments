@@ -63,7 +63,7 @@ describe('Course', function() {
 	describe('get_title', () => {
 		it('should return title with id', () => {
 			let course = new Course(data);
-			assert.equal(course.get_title(), `${data.title} (${data.id})`);
+			assert.equal(course.get_title, `${data.title} (${data.id})`);
 		});
 	});
 });
